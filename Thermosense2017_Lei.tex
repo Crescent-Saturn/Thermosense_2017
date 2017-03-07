@@ -18,7 +18,7 @@
 
 \author[a]{L. Lei}
 \author[b]{G. Ferrarini}
-\author[b]{A. Bortoin}
+\author[b]{A. Bortolin}
 \author[b]{G. Cadelano}
 \author[b]{P. Bison}
 \author[a]{X. Maldague}
@@ -45,7 +45,7 @@ Pulsed Thermography (PT) is one of the most common methods in Active Thermograph
 \label{sec:introduction}  % \label{} allows reference to this section
 In Nondestructive Testing \& Evaluation (NDT \& E) field, Active InfraRed Thermography is a technique widely used in assessing the conditions of parts of material components\cite{Maldague2001theory}. Traditionally, Pulsed Thermography (PT) deploys a thermal stimulation pulse (flash or lamp heating) to produce a thermal contrast between the feature of interest and the background, then monitors the time evolution of the surface temperature. With this rapidity and convenience, numerous studies have been devoted to this technique\cite{Maldague1993Nondestructive,Maldague1994bInfra,2011-ClementeIbarra-Castanedo,2007-Ibarra-Castanedo,duan2013quantitative}.
 
-However, in the past the scientific community only a limited number of studies investigating a cold approach (cooling as the external stimulation in Active Infrared Thermography) have been performed on industrial produce inspection\cite{endohdynamical2012,2012-LewisHom,Lei2016detection}. Thus, the advantage and convenience of using the cold stimulation in IT still remains to be investigated in detail and better understood. The aim of this paper is that of exploring the opposite external stimulation in IR Thermography: cooling instead of heating. THe three methods (two other traditional techniques--Pulsed Thermography and Lock-in Thermography act as the reference) will be applied on a steel slab with different size of flat-bottom-holes. The thermographic images of the experiments will be  treated to produce eventually a binary map of the location of the defects. This map will be statistically evaluated in terms of sensitivity and specificity\cite{Fawcett2006} by comparison with the ’true’ map of the defects, furnishing a rank of the three stimulation methods. 
+However, in the past the scientific community only a limited number of studies investigating a cold approach (cooling as the external stimulation in Active Infrared Thermography) have been performed on industrial produce inspection\cite{endohdynamical2012,2012-LewisHom,Lei2016detection}. Thus, the advantage and convenience of using the cold stimulation in IT still remains to be investigated in detail and better understood. The aim of this paper is that of exploring the opposite external stimulation in IR Thermography: cooling instead of heating. The three methods (two other traditional techniques--Pulsed Thermography and Lock-in Thermography act as the reference) will be applied on a steel slab with different size of flat-bottom-holes. The thermographic images of the experiments will be  treated to produce eventually a binary map of the location of the defects. This map will be statistically evaluated in terms of sensitivity and specificity\cite{Fawcett2006} by comparison with the ’true’ map of the defects, furnishing a rank of the three stimulation methods. 
 
 
 
@@ -71,8 +71,8 @@ One side stimulation approach is often used in the Infrared Thermography for NDT
 The following equipments are set up for this study:
 \begin{itemize}
    \item Infrared Camera FLIR SC3000 (320$\times$240 pixels, 50Hz, GaAs, 8-9 $\mu m$)
-   \item Two pairs halogen lamps with heat source of \textbf{(???)$W$} (\textbf{REF TO Paolo})
-   \item One pair of modulated halogen lamps \textbf{(???$W$)} served as Lock-in stimulation
+   \item Two pairs of flash halogen lamps for a total of 10 kJ (electric) released in 5 $ms$ 
+   \item One pair of modulated halogen lamps with 1kW each served as Lock-in stimulation
    \item An isolated bottle full of Liquid Nitrogen
 \end{itemize}
 
@@ -89,7 +89,7 @@ In this study, a specimen made of steel prepared with flat-bottom holes along di
     \label{specimen} 
    \end{figure}  
 
-Where seventeen holes in which diameters vary from 0.4 $cm$  to 3 $cm$, and depths vary from 0.3 $cm$ to 0.9 $cm$ (from bottom). The whole thickness is 3 $cm$ (\textbf{???Verify with Paolo}). This specimen is painted before the test, in order to increase its emissivity and to get a homogeneous external simulation.
+Where seventeen holes in which diameters vary from 0.4 $cm$  to 3 $cm$, and depths vary from 0.3 $cm$ to 0.9 $cm$ (from bottom). The whole thickness is 1 $cm$. This specimen is painted before the test, in order to increase its emissivity and to get a homogeneous external simulation.
 
 % subsection specimen (end)
 \subsection{Stimulation Techniques} % (fold)
@@ -106,7 +106,7 @@ Known as the traditional and fast technique in NDT \& E, Pulse Thermography acts
    \label{eq_pt}
 \end{equation}
 
-For the situation of modulated periodic heating, 3 different angular frequencies $\omega$ of 100~$Hz$ (LIT16), 200~$Hz$ (LIT8) and 400~$Hz$ (LIT4) (\textbf{???VERIFY with Paolo}) are performed in Lock-in Thermography. 
+For the situation of modulated periodic heating, 3 different angular frequencies $\omega$ of 0.0625~$Hz$ (LIT16--16 periods in seconds, same to the following), 0.125~$Hz$ (LIT8) and 0.25~$Hz$ (LIT4) are performed in Lock-in Thermography. 
 By the convolution integral, Eq~(\ref{eq_pt}) becomes:
 \begin{equation}
    T(t) = \frac{W}{\lambda}\frac{\alpha}{L}\int_0^t d\tau \Big(1+\sin(\omega \tau - \frac{\pi}{2})\Big)\Big\{1+2\sum_{n=1}^{\infty} e^{-\frac{n^2 \pi ^2\alpha(t-\tau)}{L^2}}\Big\}
