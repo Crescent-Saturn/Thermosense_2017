@@ -45,7 +45,7 @@ Pulsed Thermography (PT) is one of the most common methods in Active Thermograph
 \label{sec:introduction}  % \label{} allows reference to this section
 In Nondestructive Testing \& Evaluation (NDT \& E) field, Active InfraRed Thermography is a technique widely used in assessing the conditions of parts of material components\cite{Maldague2001theory}. Traditionally, Pulsed Thermography (PT) deploys a thermal stimulation pulse (flash or lamp heating) to produce a thermal contrast between the feature of interest and the background, then monitors the time evolution of the surface temperature. With this rapidity and convenience, numerous studies have been devoted to this technique\cite{Maldague1993Nondestructive,Maldague1994bInfra,2011-ClementeIbarra-Castanedo,2007-Ibarra-Castanedo,duan2013quantitative}.
 
-However, in the past the scientific community only a limited number of studies investigating a cold approach (cooling as the external stimulation in Active Infrared Thermography) have been performed on industrial produce inspection\cite{endohdynamical2012,2012-LewisHom,Lei2016detection}. Thus, the advantage and convenience of using the cold stimulation in IT still remains to be investigated in detail and better understood. The aim of this paper is that of exploring the opposite external stimulation in IR Thermography: cooling instead of heating. The three methods (two other traditional techniques--Pulsed Thermography and Lock-in Thermography act as the reference) will be applied on a steel slab with different size of flat-bottom-holes. The thermographic images of the experiments will be  treated to produce eventually a binary map of the location of the defects. This map will be statistically evaluated in terms of sensitivity and specificity\cite{Fawcett2006} by comparison with the ’true’ map of the defects, furnishing a rank of the three stimulation methods. 
+However, in the past only a limited number of studies investigating a cold approach (cooling as the external stimulation in Active Infrared Thermography) have been performed on industrial produce inspection\cite{endohdynamical2012,2012-LewisHom,Lei2016detection}. Thus, the advantage and convenience of using the cold stimulation in IT still remains to be investigated in detail and better understood. The aim of this paper is that of exploring the opposite external stimulation in IR Thermography: cooling instead of heating. Three methods (two traditional techniques--Pulsed Thermography and Lock-in Thermography act as the reference) will be applied on a steel slab with different size of flat-bottom-holes. The thermographic images of the experiments will be  treated to produce eventually a binary map of the location of the defects. This map will be statistically evaluated in terms of sensitivity and specificity\cite{Fawcett2006} by comparison with the ’true’ map of the defects, furnishing a rank of the three stimulation methods. 
 
 
 
@@ -113,7 +113,7 @@ By the convolution integral, Eq~(\ref{eq_pt}) becomes:
 \end{equation}
 where $W$ is the absorbed heating power.
 
-The Liquid Nitrogen applied in the test is in a way of pouring-out directly to cool the sample. One sprinkles LN2 from the specimen center and lets it spread around to the edges. The whole capture duration is 500 frames with 50~$Hz$ of image frequency, ie. 10 seconds of recording. The pouring time (cooling time) is about 2 seconds, with 100 frames in the results sequence. Its set-up is shown in Figure~\ref{Exp_LN2}.
+The Liquid Nitrogen applied in the test is poured out directly on the surface to cool the sample. One sprinkles LN2 from the specimen center and lets it spread around to the edges. The whole capture duration is 500 frames with 50~$Hz$ of image frequency, ie. 10 seconds of recording. The pouring time (cooling time) is about 2 seconds, with 100 frames in the results sequence. The experimental set-up is shown in Figure~\ref{Exp_LN2}.
 
 \begin{figure}[ht]
    \centering
@@ -145,7 +145,7 @@ In addition to the common technique for NDT \& E, Fast Fourier Transform in LIT\
 
 \subsection{ROC Curve analysis} % (fold)
 \label{sub:roc_curve_analysis}
-Receiver operating characteristic (ROC) curve is a technique in statistics which helps visualize, organize and select classifiers based on their performance. The curve graph is created by plotting the the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. More details about concepts and definitions can be found in [T. Fawcett 2006]\cite{Fawcett2006}.
+Receiver operating characteristic (ROC) curve is a technique in statistics which helps visualize, organize and select classifiers based on their performance. The curve graph is created by plotting the the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. More details about concepts and definitions can be found in [T. Fawcett 2006]\cite{Fawcett2006}. While being frequently chosen a standard method in several scientific fields, ROC are rarely applied in the thermographic field.\cite{Bison2014} 
 
 Implemented in this study, a binary map of defects location is built and correlated to the post-processed images in gray scale, and the lay-out is sketched in Figure~\ref{binary}. The main algorithm in the calculation of TPR and FPR is clarified as:
 \begin{enumerate}
@@ -313,10 +313,10 @@ It is also the same case for the curves of LIT Amplitude that LIT4 has an unfavo
 
 \section{Conclusion} % (fold)
 \label{sec:conclusion}
-In this study one investigates an opposite external stimulation--cooling instead of heating in IR Thermography for NDT \& E. 
+This study investigates an external stimulation--cooling instead of heating in IR Thermography for NDT \& E. 
 A steel specimen is used to test three different stimulations for thermal images and also ROC analysis comparison. 
-Results shows that all techniques present part of the flaws in the sample, whereas LN2 technique represents the defects just at the beginning, this may due to the high conductivity of steel. 
-In thermal results, the PCT post-processing method displays a better results for all. More defects are exhibited in Flash stimulation with PCT processing.
+Results shows that all techniques highlight part of the flaws in the sample, whereas LN2 technique represents the defects just at the beginning, this maybe due to the high conductivity of steel. 
+In thermal results, the PCT post-processing method displays a better results for all procedures. More defects are exhibited in Flash stimulation with PCT processing.
 ROC curve analysis has elucidated a straightforward classification comparison, in which the best curve obtained is by the Flash technique with PCT processing.
 
 In future work, other common composite materials such as CFRP (Carbon fiber reinforced polymer), GFRP (Glass Fiber Reinforced Polymer ) will be chosen as specimen. The way of Liquid Nitrogen pouring may be replaced by spraying onto the sample surface, which can reduce the inhomogeneous cooling problem. To enhance the penetration of heat inside the sample, a proposition that heating in one side and cooling the other side might be taken into consideration.
