@@ -137,23 +137,23 @@ The following image-processing techniques and data-analysis methods were employe
 \end{itemize}
 
 \subsection{Principal Component Thermography (PCT)}
-Principal Component Thermography technique\cite{Rajic2002} uses “singular value decomposition (SVD) to reduce the matrix of observations to a highly compact statistical representation of the spatial and temporal variations relating to contrast information associated with underlying structural flaws”.
+The Principal Component Thermography technique\cite{Rajic2002} uses “singular value decomposition (SVD) to reduce the matrix of observations to a highly compact statistical representation of the spatial and temporal variations relating to contrast information associated with underlying structural flaws”.
 
 \subsection{FFT in Phase and Amplitude for LIT}
-In addition to the common technique for NDT \& E, Fast Fourier Transform in LIT\cite{wu1998lock} is also one of the most applied technique in IR Thermography, which is based on the periodic heating of the object under test. A thermal wave is likewise generated and propagates inside the material. In real experimental cases the thermal wave is composed by a principal frequency and several harmonics where the amplitude of the Fast Fourier Transform is a function of frequency. By selecting the component with the highest amplitude it is possible to produce a map of phase at the corresponding frequency where the defect appears enhanced.
+In addition to the common technique for NDT \& E, Fast Fourier Transform in LIT\cite{wu1998lock} is also one of the most applied techniques in IR Thermography, which is based on the periodic heating of the object being tested. A thermal wave is likewise generated and propagates inside the material. In real experimental cases the thermal wave is composed by a principal frequency and several harmonics where the amplitude of the Fast Fourier Transform is a function of frequency. By selecting the component with the highest amplitude it is possible to produce phase a map at the corresponding frequency where the defect appears enhanced.
 
 
 \subsection{ROC Curve analysis} % (fold)
 \label{sub:roc_curve_analysis}
-Receiver operating characteristic (ROC) curve is a technique in statistics which helps visualize, organize and select classifiers based on their performance. The curve graph is created by plotting the the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. More details about concepts and definitions can be found in [T. Fawcett 2006]\cite{Fawcett2006}. While being frequently chosen a standard method in several scientific fields, ROC are rarely applied in the thermographic field.\cite{Bison2014a} 
+The Receiver operating characteristic (ROC) curve is a technique in statistics which helps visualize, organize and select classifiers based on their performance. The curve graph is created by plotting the the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. More details about concepts and definitions can be found in [T. Fawcett 2006]\cite{Fawcett2006}. While being frequently chosen a standard method in several scientific fields, ROC are rarely applied in the thermographic field.\cite{Bison2014a} 
 
-Implemented in this study, a binary map of defects location is built and correlated to the post-processed images in gray scale, and the lay-out is sketched in Figure~\ref{binary}. The main algorithm in the calculation of TPR and FPR is clarified as:
+Implemented in this study, a binary map of the defect locations is built and correlated to the post-processed images in gray scale, and the lay-out is provided in Figure~\ref{binary}. The main algorithm in the calculation of TPR and FPR is clarified as:
 \begin{enumerate}
-   \item Get the best gray-scale result from post-processing thermal images as the test image;
-   \item Resize the defect map as the same size of the test image;
+   \item Identify the best gray-scale result from the post-processing thermal images as the test image;
+   \item Resize the defect map to the same size as that of the test image;
    \item Choose a thresholding step number $N$($N=1000$ in this study) and establish the step value of thresholding [from $0$, $\frac{1}{N}$, $\frac{2}{N}$ till $1 (=\frac{N}{N})$];
-   \item For each thresholding step, binarize the test image with the thresholding and then compare it to the defect map, getting the corresponding TPR and FPR value;
-   \item Iterate the binarization and comparison till to plot a whole curve.
+   \item For each thresholding step, binarize the test image with the thresholding and then compare it to the defect map, in order to obtain the corresponding TPR and FPR value;
+   \item Iterate the binarization and comparison so as to plot a whole curve.
 \end{enumerate}
 
 
@@ -179,7 +179,7 @@ Implemented in this study, a binary map of defects location is built and correla
 % section methods (end)
 \section{Results \& Discussion} % (fold)
 \label{sec:results_&_discussion}
-Figure~\ref{raw_results} illustrates the thermal raw images of PT and LN$_2$. And Lock-In FFT results can be found in Figure~\ref{LIT_results}.
+Figure~\ref{raw_results} illustrates the thermal raw images of PT and LN$_2$. The Lock-In FFT results can be found in Figure~\ref{LIT_results}.
 \begin{figure}[ht]
    \centering
    \subfloat[Flash Raw Frame 23]
