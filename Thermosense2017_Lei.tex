@@ -51,7 +51,7 @@ However, in the past in the scientific community, only a limited number of studi
 
 \section{Experimental setup} % (fold)
 \label{sec:experimental_setup}
-One side stimulation approach is often used in the Infrared Thermography for NDT \& E field, which is also known as reflection scheme: both the stimulation device and the camera stay on the same side of the sample under test. This approach applied in reality is shown in Figure~\ref{Exp_setup}.
+One side stimulation approach is often used in the Infrared Thermography NDT \& E field, which is also known as the reflection scheme: both the stimulation device and the camera remain on the same side of the sample being tested. This approach applied in reality is shown in Figure~\ref{Exp_setup}.
 
 \begin{figure}[ht]
    \centering
@@ -68,7 +68,7 @@ One side stimulation approach is often used in the Infrared Thermography for NDT
    \label{Exp_setup}
 \end{figure}
 
-The following equipments are set up for this study:
+The following equipment was set up for this study:
 \begin{itemize}
    \item Infrared Camera FLIR SC3000 (320$\times$240 pixels, 50Hz, GaAs, 8-9 $\mu m$)
    \item Two pairs of flash halogen lamps for a total of 10 kJ (electric) released in 5 $ms$ 
@@ -78,42 +78,42 @@ The following equipments are set up for this study:
 
 \subsection{Specimen} % (fold)
 \label{sub:specimen}
-In this study, a specimen made of steel prepared with flat-bottom holes along different depths and sizes will be examined. Their dimensions are depicted in Figure~\ref{specimen}.
+In this study, a steel specimen comprising flat-bottom holes of different depths and sizes will be examined. Their dimensions are depicted in Figure~\ref{specimen}.
    \begin{figure}[ht]
    \centering   
    % \begin{tabular}{c} %% tabular useful for creating an array of images 
    \includegraphics[scale=0.4]{graph/specimen_schema.pdf}
    % \end{tabular}
-   \caption{Steel sample dimension details with Flat-Bottom Holes along different depths and sizes.}
+   \caption{Steel sample dimension details with Flat-Bottom Holes of different depths and sizes.}
 %>>>> use \label inside caption to get Fig. number with \ref{}
     \label{specimen} 
    \end{figure}  
 
-Where seventeen holes in which diameters vary from 0.4 $cm$  to 3 $cm$, and depths vary from 0.3 $cm$ to 0.9 $cm$ (from bottom). The whole thickness is 1 $cm$. This specimen is painted before the test, in order to increase its emissivity and to get a homogeneous external simulation.
+The steel plate has seventeen holes whose diameters vary from 0.4 $cm$  to 3 $cm$, and whose depths vary from 0.3 $cm$ to 0.9 $cm$ (from bottom). The entire thickness is 1 $cm$. This specimen is painted before the test, in order to increase its emissivity and to obtain a homogeneous external simulation.
 
 % subsection specimen (end)
 \subsection{Stimulation Techniques} % (fold)
 \label{sub:stimulation_techniques}
-Three external stimulations are planned to deployed on the sample, for the sake of  obtaining a good comparison in results: 
+Three external stimulations were to deployed on the sample, for the sake of  obtaining a good comparison in results: 
 \begin{itemize}
    \item Pulse Thermography (PT) 
    \item Lock-in Thermography (LIT)
    \item Liquid Nitrogen cooling (LN$_2$)
 \end{itemize}
-Known as the traditional and fast technique in NDT \& E, Pulse Thermography acts as the reference during this test. When neglecting heat exchange with the environment, the pulse of energy $Q$, delivered on a layer of thickness $L$, characterized by a density $\rho$, a specific heat $C_p$ and a thermal conductivity $\lambda$ (or a thermal diffusivity $\alpha$) gives increment to a temperature behavior on the heated surface by:
+Known as the traditional and fast technique in NDT \& E, Pulse Thermography acts as the reference during this test. When neglecting heat exchange with the environment, the pulse of energy $Q$, delivered on a layer of thickness $L$, characterized by a density $\rho$, a specific heat $C_p$ and a thermal conductivity $\lambda$ (or a thermal diffusivity $\alpha$) produces a temperature increment behavior on the heated surface given by:
 \begin{equation}
    T(t) = \frac{Q}{\rho C_p L}[1+2\sum_{n=1}^{\infty} e^{-\frac{n^2 \pi ^2\alpha t}{L^2}}]
    \label{eq_pt}
 \end{equation}
 
-For the situation of modulated periodic heating, 3 different angular frequencies $\omega$ of 0.0625~$Hz$ (LIT16--16 periods in seconds, same to the following), 0.125~$Hz$ (LIT8) and 0.25~$Hz$ (LIT4) are performed in Lock-in Thermography. 
-By the convolution integral, Eq~(\ref{eq_pt}) becomes:
+For the situation of modulated periodic heating, 3 different angular frequencies $\omega$ of 0.0625~$Hz$ (LIT16--one period is equivalent to 16 seconds), 0.125~$Hz$ (LIT8--one period is equivalent to 8 seconds) and 0.25~$Hz$ (LIT4--one period is equivalent to 4 seconds) are performed in Lock-in Thermography. 
+Using the convolution integral, Eq~(\ref{eq_pt}) becomes:
 \begin{equation}
    T(t) = \frac{W}{\lambda}\frac{\alpha}{L}\int_0^t d\tau \Big(1+\sin(\omega \tau - \frac{\pi}{2})\Big)\Big\{1+2\sum_{n=1}^{\infty} e^{-\frac{n^2 \pi ^2\alpha(t-\tau)}{L^2}}\Big\}
 \end{equation}
 where $W$ is the absorbed heating power.
 
-The Liquid Nitrogen applied in the test is poured out directly on the surface to cool the sample. One sprinkles LN$_2$ from the specimen center and lets it spread around to the edges. The whole capture duration is 500 frames with 50~$Hz$ of image frequency, ie. 10 seconds of recording. The pouring time (cooling time) is about 2 seconds, with 100 frames in the results sequence. The experimental set-up is shown in Figure~\ref{Exp_LN2}.
+The Liquid Nitrogen is applied in the test by means of pouring it out directly onto the surface in order to cool the sample. LN$_2$ as sprinkled on to  the specimen center and allowed to spread out forwards the edges. The whole capture duration is 500 frames with 50~$Hz$ of image frequency, ie. 10 seconds of recording. The pouring time (cooling time) is about 2 seconds, with 100 frames in the results sequence. The experimental set-up is shown in Figure~\ref{Exp_LN2}.
 
 \begin{figure}[ht]
    \centering
@@ -129,7 +129,7 @@ The Liquid Nitrogen applied in the test is poured out directly on the surface to
 
 \section{Processing Methods} % (fold)
 \label{sec:processing_methods}
-The following image-processing techniques and data-analysis methods are employed for this study:
+The following image-processing techniques and data-analysis methods were employed for this study:
 \begin{itemize}
    \item Principal Component Thermography (PCT)
    \item Phase and Amplitude images Fast Fourier Transform (FFT)
