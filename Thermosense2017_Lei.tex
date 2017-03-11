@@ -242,16 +242,17 @@ Figure~\ref{raw_results} illustrates the thermal raw images of PT and LN$_2$. Th
 
 \subsection{Thermal images comparison} 
 
-From the results above, raw images in Figure~\ref{raw_results} display that the most detectable flaws are the ones with high aspect ratio (ie. diameter-to-depth). What's more, for PT stimulation, a small hole with diameter 0.4 $cm$, depth\footnote{It should be noted that the depth values mentioned here and after are from the bottom of the sample, therefore the real corresponding depths should be these values subtracted by the thickness.} 0.9 $cm$ (left-upper in Figure~\ref{Flash_raw23}) appeared in frame 23, and disappeared after, while another two holes with diameter 2 $cm$, depth 0.9 $cm$ and two with diameter 3 $cm$, depth 0.5 $cm$ (center in Figure~\ref{Flash_raw60}) appeared in frame 60.  
+From the results above, raw images in Figure~\ref{raw_results} indicate that the most detectable flaws are the ones with a high aspect ratio (ie. diameter-to-depth). In addition, for the PT stimulation, a small hole with diameter 0.4 $cm$, depth\footnote{It should be noted that the depth values mentioned here and after are from the bottom of the sample, therefore the real corresponding depths should be these values subtracted from the thickness.} 0.9 $cm$ (left-upper in Figure~\ref{Flash_raw23}) appeared in frame 23, and disappeared after, while another two holes with diameter 2 $cm$, depth 0.9 $cm$ and two with diameter 3 $cm$, depth 0.5 $cm$ (center in Figure~\ref{Flash_raw60}) appeared in frame 60.  
 
-For LIT results, FFT in Amplitude has a better detectable flaws than FFT in Phase, as there are some noise in all Phase images. LIT8 and LIT16 have about four more detected flaws than LIT4. Whereas, for FFT in Phase for LIT8 and LIT16, there come up some inverse gray-scale values. This might due to the reverse image question.
+For LIT results, FFT in Amplitude has a better flaw detection capability than FFT in Phase, as there is some noise in all of the Phase images. LIT8 and LIT16 have about four more detected flaws than LIT4. Whereas, for FFT in Phase for LIT8 and LIT16, there some inverse gray-scale values occur. This might be due to the reverse image question.
 
-After processed by PCT, Figure~\ref{PCT_results} exhibits a clearer consequence. It can be observed that most of the flaws are visible, especially in PT image. There are less in the one of LIT4.
+Following PCT processing, Figure~\ref{PCT_results} exhibits a clearer resutl. It can be observed that most of the flaws are visible, especially in the Flash image (Figure~\ref{PCT_Flash}. Less flaws are visible in the LIT4 PCT third image.
 %The corresponding PCT results are represented in Figure~\ref{PCT_results}.
 \begin{figure}[ht]
     \centering
     \subfloat[Flash PCT 2nd Image]{
       \includegraphics[scale=0.5]{graph/Flash_PCT_2.png}
+      \label{PCT_Flash}
       }
     \hspace{10pt}
     \subfloat[LN$_2$ PCT 2nd Image]{
@@ -277,17 +278,17 @@ After processed by PCT, Figure~\ref{PCT_results} exhibits a clearer consequence.
 \end{figure}
 
 
-Comparing the processed thermal images, the following summaries can be obtained:  
+Comparing the processed thermal images, the following observations can be made:  
 \begin{itemize}
     \item All techniques present part of the flaws in the sample;
-    \item PCT post-processing method displays a better results for all;
+    \item The PCT post-processing method displays a better results for all images;
     \item More defects are exhibited in Flash stimulation with PCT processing;
     %\item For LIT8 and LIT16, there are some reverse image question.
 \end{itemize}
 
 
 \subsection{Corresponding ROC curves comparison}
-Therefore, ROC curves obtained from comparing the binary map of defects location to above results are represented in Figure~\ref{ROC_curve}.
+The ROC curves obtained from comparing the binary map of defect locations to the above results are represented in Figure~\ref{ROC_curve}.
 \begin{figure}[ht]
     \centering
     \subfloat[ROC from PCT Results]
@@ -303,10 +304,10 @@ Therefore, ROC curves obtained from comparing the binary map of defects location
     \label{ROC_curve}
 \end{figure}
 
-Where the \textit{sensitivity} is the True positive rate, \textit{1-specificity} is the False positive rate.
-From the curves of PCT results, one can easily notice that the five curves have almost the same performance of classification in the beginning. When the \textit{tp rate} arrives at $0.3$, PT curve becomes the nearest to the northwest (where \textit{tp rate} is higher, \textit{fp rate} is lower or both). The second one is the LN$_2$ curve. But it has a bit higher \textit{tp rate} than PT after \textit{fp rate} reaches $0.4$. LIT8 and LIT16 curves act almost the same performance before \textit{tp rate} attains $0.7$. After that LIT16 has a higher \textit{tp rate} than LIT8. Whereas the LIT4 curve keeps closest to the diagonal line $y=x$, which represents the strategy of randomly guessing a class.
+In the ROC curves, the \textit{sensitivity} is the True positive rate, and \textit{1-specificity} is the False positive rate.
+From the curves of the PCT results, one can easily notice that the five curves have almost the same performance of classification in the beginning. When the \textit{tp rate} arrives at $0.3$, the PT curve becomes the nearest to the northwest (where the \textit{tp rate} is higher, the \textit{fp rate} is lower or both). The second one is the LN$_2$ curve. But it has a slightly higher \textit{tp rate} than PT after the \textit{fp rate} reaches $0.4$. The LIT8 and LIT16 curves have almost the same performance before the \textit{tp rate} attains $0.7$. After that the LIT16 has a higher \textit{tp rate} than LIT8. Whereas the LIT4 curve keeps closest to the diagonal line $y=x$, which represents the strategy of randomly guessing a class.
 
-It is also the same case for the curves of LIT Amplitude that LIT4 has an unfavorable performance in classification. And LIT16 has a bit higher \textit{tp rate} than LIT8, too. Because of the reverse image problem, one plots only the LIT amplitude ROC curve.
+The situation is the same for the curves of LIT Amplitude, in that LIT4 has an unfavorable performance in classification. LIT16 also has a slightly higher \textit{tp rate} than LIT8. Because of the reverse image problem, only the LIT amplitude ROC curve is plotted.
 % section results_&_discussion (end)
 
 
@@ -315,12 +316,12 @@ It is also the same case for the curves of LIT Amplitude that LIT4 has an unfavo
 \label{sec:conclusion}
 This study investigates an external stimulation--cooling instead of heating in IR Thermography for NDT \& E. 
 A steel specimen is used to test three different stimulations for thermal images and also ROC analysis comparison. 
-Results shows that all techniques highlight part of the flaws in the sample, whereas LN$_2$ technique represents the defects just at the beginning, this maybe due to the high conductivity of steel. 
+Results shows that all techniques highlight part of the flaws in the sample, whereas the LN$_2$ technique represents the defects only at the beginning; this maybe due to the high conductivity of steel. 
 In thermal results, the PCT post-processing method displays a better results for all procedures. More defects are exhibited in Flash stimulation with PCT processing.
 ROC curve analysis has elucidated a straightforward classification comparison, in which the best curve obtained is by the Flash technique with PCT processing.
 
-In future work, other common composite materials such as CFRP (Carbon fiber reinforced polymer), GFRP (Glass Fiber Reinforced Polymer ) will be chosen as specimen. The way of Liquid Nitrogen pouring may be replaced by spraying onto the sample surface, which can reduce the inhomogeneous cooling problem. To enhance the penetration of heat inside the sample, a proposition that heating in one side and cooling the other side might be taken into consideration.
-Even though LN$_2$ technique in this study has not shown enough advantages, this exploration of opposite way of external stimulation in InfraRed Thermography might propel new ideas of approaches for NDT \& E.
+In future work, other common composite materials such as CFRP (Carbon fiber reinforced polymer), GFRP (Glass Fiber Reinforced Polymer) will be chosen as specimen. The method of Liquid Nitrogen pouring may be replaced by spraying onto the sample surface, which can reduce the inhomogeneous cooling problem. To enhance the penetration of heat inside the sample, a proposition involving heating on one side of the specimen and cooling the other side might be taken into consideration.
+Even though LN$_2$ technique in this study has not shown enough advantages, this exploration of an opposite means of external stimulation in InfraRed Thermography might favor new ideas of approaches for NDT \& E.
 
 % Begin the Introduction below the Keywords. The manuscript should not have headers, footers, or page numbers. It should be in a one-column format. References are often noted in the text and cited at the end of the paper.
 
